@@ -16,9 +16,10 @@ colors = {
 def get_position():
     global df_geoloc
     try:
-        satelite = re.get(
-            "https://api.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/2/&apiKey=VUBYSF-UDEB2E-A44UCK-4WK8"
-        )
+        # Você precisa criar uma conta no site N2YO para poder
+        # obter os dados delocalização da Estação Espacial Internacional
+        # https://www.n2yo.com/api/
+        satelite = re.get("Link da API com a sua Chave de acesso")
 
         satelite_json = json.loads(str(satelite.text))
 
